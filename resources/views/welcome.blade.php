@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>WACO LARAVEL</title>
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
@@ -18,7 +18,7 @@
             <div class="max-w-7xl mx-auto p-6 lg:p-8">
         <header class="pokemon-header text-center py-5">
         <img src="https://1000marcas.net/wp-content/uploads/2020/01/Logo-Pokemon.png" alt="Pokémon Logo" class="pokemon-logo img-fluid">
-        <h1 class="pokemon-title">Bienvenido a Pokémon WACO LARAVEL</h1>
+        <h1 class="pokemon-title">Bienvenido a Pokémon WACO LARAVEL | DAVIAN ASCANIO</h1>
         <p class="pokemon-description">¡Explora un mundo lleno de aventuras y entrenadores Pokémon!</p>
     </header>
 
