@@ -1,0 +1,73 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://cutewallpaper.org/21/pokemon-pattern-background/Anyone-else-likes-Nintendos-Pokemon-background-pattern-Imgur.jpg');
+}
+
+/* Estilos del formulario */
+.pokemon-card {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+.pokemon-card-header {
+    background-color: #e60000;
+    color: #ffffff;
+    font-size: 24px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+}
+
+.pokemon-form-label {
+    color: #333333;
+    font-weight: bold;
+}
+
+.pokemon-form-input {
+    background-color: #f2f2f2;
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+    color: #333333;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.pokemon-form-input:focus {
+    border-color: #e60000;
+    box-shadow: 0 0 5px rgba(230, 0, 0, 0.5);
+}
+
+.pokemon-btn {
+    background-color: #e60000;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 10px 20px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.pokemon-btn:hover {
+    background-color: #d40000;
+}
+
+.pokemon-link {
+    color: #e60000;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.pokemon-link:hover {
+    color: #b30000;
+}

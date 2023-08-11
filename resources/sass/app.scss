@@ -1,0 +1,115 @@
+// Fonts
+@import url('https://fonts.bunny.net/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import 'bootstrap/scss/bootstrap';
+
+
+/* Set a minimum width of 50 pixels for all <td> elements */
+#pokemon-table td {
+    min-height: 50px;
+}
+
+/* Optionally, you can set a specific width for individual columns */
+#pokemon-table td:nth-child(2) {
+    /* Second column */
+    height: 50px;
+}
+
+/* Estilos adicionales */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://pokemondeal.com/wp-content/uploads/2020/12/Pokeball-wallpaper.jpg') !important;
+
+}
+
+/* Estilos para el encabezado */
+.pokemon-header {
+    background-color: #ffcb05;
+    border-bottom: 5px solid #e60000;
+}
+
+.pokemon-logo {
+    max-width: 200px;
+    margin-bottom: 20px;
+    display: initial;
+}
+
+.pokemon-title {
+    font-size: 36px;
+    color: #e60000;
+    margin-bottom: 10px;
+}
+
+.pokemon-description {
+    font-size: 18px;
+    color: #333;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Estilos para las secciones */
+.pokemon-section {
+    text-align: center;
+}
+
+.section-title {
+    font-size: 28px;
+    color: #e60000;
+    margin-bottom: 20px;
+}
+
+.pokemon-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.pokemon-name {
+    font-size: 24px;
+    color: #333;
+    margin-top: 10px;
+}
+
+.pokemon-info {
+    font-size: 16px;
+    color: #666;
+    margin-top: 5px;
+}
+
+/* Estilos para el botón */
+.pokemon-btn {
+    padding: 12px 30px;
+    background-color: #e60000;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+.pokemon-btn:hover {
+    background-color: #c10000;
+}
+
+/* Estilos para el pie de página */
+.pokemon-footer {
+    background-color: #ffcb05;
+    border-top: 5px solid #e60000;
+    color: #333;
+}
+
+
+.list-group-item.active {
+    z-index: 2;
+    color: var(--bs-list-group-active-color);
+    background-color: #e60000;
+    border-color: #e60000;
+}
