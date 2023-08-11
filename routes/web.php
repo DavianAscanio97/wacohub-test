@@ -19,11 +19,11 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/home/users', [App\Http\Controllers\UserController::class, 'index'])->name('users.index');
-Route::get('/home/users/{id}', [App\Http\Controllers\UserController::class, 'show'])->name('users.show');
-Route::put('/home/users/{id}', [App\Http\Controllers\UserController::class, 'update'])->name('users.update');
-Route::delete('/users/{user}', [App\Http\Controllers\UserController::class, 'destroy'])->name('users.destroy');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home')->middleware('auth');
+Route::get('/home/users', [App\Http\Controllers\UserController::class, 'index'])->name('users.index')->middleware('auth');
+Route::get('/home/users/{id}', [App\Http\Controllers\UserController::class, 'show'])->name('users.show')->middleware('auth');
+Route::put('/home/users/{id}', [App\Http\Controllers\UserController::class, 'update'])->name('users.update')->middleware('auth');
+Route::delete('/users/{user}', [App\Http\Controllers\UserController::class, 'destroy'])->name('users.destroy')->middleware('auth');
 
-Route::get('/home/pokemon', [App\Http\Controllers\PokemonController::class, 'index'])->name('pokemon.index');
-Route::post('/home/pokemon/favorite', [App\Http\Controllers\PokemonController::class, 'favorite'])->name('pokemon.favorite');
+Route::get('/home/pokemon', [App\Http\Controllers\PokemonController::class, 'index'])->name('pokemon.index')->middleware('auth');
+Route::post('/home/pokemon/favorite', [App\Http\Controllers\PokemonController::class, 'favorite'])->name('pokemon.favorite')->middleware('auth');

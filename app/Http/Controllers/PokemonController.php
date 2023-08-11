@@ -71,14 +71,14 @@ class PokemonController extends Controller
                 // Eliminar de favoritos
                 Favorites::where('id_user', auth()->user()->id)
                     ->where('ref_api', $pokemonName)->delete();
-                $message = 'Pokemon removed from favorites';
+                $message = 'Pokémon eliminado de favoritos';
             } else {
                 // Agregar a favoritos
                 Favorites::create([
                     'id_user' => auth()->user()->id,
                     'ref_api' => $pokemonName
                 ]);
-                $message = 'Pokemon added to favorites';
+                $message = 'Pokémon agregado a favoritos';
             }
 
             // Devolver una respuesta JSON con el estado actualizado y un mensaje

@@ -82,9 +82,9 @@
 
                         // Update the button text based on the favorite status
                         if (isFavorited) {
-                            form.find('.btn-favorite').text('Remove from Favorites');
+                            form.find('.btn-favorite').text('Quitar de favoritos');
                         } else {
-                            form.find('.btn-favorite').text('Add to Favorites');
+                            form.find('.btn-favorite').text('Agregar a los favoritos');
                         }
 
                         // Show success message
